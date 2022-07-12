@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #666666;
+    font-family: 微软雅黑;
+    height: 1200px;
+}
+.d1 {
+    width: 1110px;
+    margin: 0 auto;
+}
+.d1_img {
+    width: 1110px;
+    position: relative;
+}
+.d2 {
+    width: 1110px;
+    height: 50px;
+    margin: 0 auto;
+    top: 450px;
+    position: absolute;
+}
+.d3 {
+    float: left;
+}
+.d3_1 {
+    width: 410px;
+    border-bottom: 2px solid #fff;
+    margin-top: 10px;
+}
+.d3_2 {
+    width: 410px;
+    border-bottom: 2px solid #fff;
+    margin-top: 20px;
+}
+.dp1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+.d4 {
+    float: right;
+}
+.d4_1 {
+    width: 410px;
+    border-bottom: 2px solid #fff;
+    margin-top: 10px;
+}
+.d4_2 {
+    width: 410px;
+    border-bottom: 2px solid #fff;
+    margin-top: 20px;
+}
+.d5 {
+    width: 290px;
+    float: left;
+}
+.d6 {
+    width: 1110px;
+    top: 520px;
+    position: absolute;
+}
+.p1 {
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.d9 {
+    width: 1000px;
+    position: absolute;
+    top: 700px;
+}
+.d10 {
+    width: 1000px;
+    height: 500px;
+    margin-top: 50px;
+}
+.d9_1 {
+    float: left;
+    width: 239px;
+    height: 500px;
+    background-color: #fff;
+}
+.d9_img {
+    width: 239px;
+    height: 218px;
+}
+.p2 {
+    width: 239px;
+    font-size: 25px;
+    color: #666666;
+    margin-top: 20px;
+    text-align: center;
+}
+.hr1 {
+    width: 219px;
+    margin: 0 auto;
+    border: 1px dashed #666666;
+}
+.d9_2 {
+    width: 190px;
+    height: 115px;
+    margin: 20px auto;
+}
+.d9_3 {
+    width: 140px;
+    height: 40px;
+    background-color: #169BD5;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+.d9_a {
+    color: #fff;
+    line-height: 40px;
+}
+.d9_4 {
+    margin-right: 14px;
+}
+form label.error{                /*这个是设置提示的css，设置成了红颜色，大小13px，估计也能用图片啥的我也没试过*/
+    color: Red;
+    font-size: 13px;
+}
+#op{
+width: 140px;
+    height: 30px;
+}
+.d11 {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+/*悬浮start*/
+.xuanfu{
+    width: 209px;
+    height: 249px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.xuanfu-left{
+    width: 145px;
+    height: 141px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    display: none;
+}
+.xuanfu-left p{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999999;
+    margin: 0;
+}
+.xuanfu-left img{
+    margin-left: 23px;
+}
+.xuanfu-right{
+    width: 60px;
+    height: 100%;
+}
+.xuanfu-right li{
+    width: 60px;
+    line-height: 60px;
+    margin-top: 3px;
+    font-family: 'cc';
+    font-size: 24px;
+    text-align: center;
+    background-color: #D8E0E5;
+}
+.xuanfu-right li a{
+    width: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+}
+.xuanfu-right li a:hover{
+    color: #0079FE;
+}
+.xuanfu-right li:nth-child(1){
+    margin-top: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.xuanfu-right li:nth-child(2){
+    margin-top: 63px;
+}

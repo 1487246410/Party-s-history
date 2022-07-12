@@ -1,0 +1,406 @@
+
+/* 初始化start */
+#create{
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+}
+#cc {
+    width: 50%;
+    height: 50%;
+    background: url("../image/锤子.png") no-repeat;
+    background-size: 250px;
+    background-position-x: 100%;
+    background-position-y: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    z-index: 999;
+}
+#cc1 {
+    width: 50%;
+    height: 50%;
+    float: left;
+    background: url("../image/镰刀.png") no-repeat;
+    background-size: 250px;
+    background-position-x: 0%;
+    background-position-y: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: absolute;
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    z-index: 999;
+}
+#cc3 {
+    width: 50%;
+    height: 50%;
+    background: url("../image/国旗左.png") no-repeat right center;
+    background-size: 250px;
+    background-position-x: 100%;
+    background-position-y: 55%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation-name: example2;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    z-index: 999;/*z-index   取值越大，定位元素就更居上  如若取值相同，后来居上  只针对定位使用  不带单位    */
+}
+#cc4 {
+    width: 50%;
+    height: 50%;
+    float: left;
+    background: url("../image/党旗右.png") no-repeat;
+    background-size: 250px;
+    background-position-x: 0%;
+    background-position-y: center;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    animation-name: example3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    z-index: 999;
+}
+
+@keyframes example {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 8.3%;
+    }
+}
+@keyframes example1 {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: 8.3%;
+    }
+} 
+@keyframes example2 {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 2%;
+    }
+}
+@keyframes example3 {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: 2%;
+    }
+} 
+
+.body{
+    background: url("../image/网站首页/bg.jpg") no-repeat;
+}
+.all{
+    display: none;
+}
+.banner{
+    width: 84.5%;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner .banner-left{
+    width: 130px;
+    display: none;
+}
+.banner-left .banner-left-msg{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+
+}
+.banner-left .banner-left-msg li{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+}
+.banner-left .banner-left-msg ul{
+    margin: 5px 0px;
+}
+.banner-left .banner-left-msg li a{
+    color: #505050;
+    font-size: 10px;
+    text-decoration: none;
+    line-height: 40px;
+    width: 100%;
+    display: block;
+    padding: 5px 5px;
+}
+.banner-left .banner-left-msg li a:hover{
+    color: #fff;
+    background-color: #dd6b3a;
+}
+.fixed {
+    position: fixed;
+    top: 25%;
+    left: 20px;
+}
+.banner .banner-container{
+    position: relative;
+    width: 1110px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+}
+.banner .banner-container .wrap{
+    position: absolute;
+    width: 7770px;
+    height: 400px;
+    z-index: 1;
+}
+.banner .banner-container img{
+    width: 1110px;
+    height: 300px;
+    float: left;
+}
+.banner .banner-container .buttons{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 20px;
+    z-index: 2;
+}
+.banner .banner-container .buttons span{
+    margin-left: 8px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+.banner .banner-container .buttons span:nth-child(1){
+    margin-left: 0px;
+}
+.banner .banner-container .buttons span.on{
+    background-color: #FFFFFF;
+}
+.banner .banner-container .arrow{
+    text-decoration:none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    color: #E4E4E4;
+    z-index: 2;
+    /*padding: 0 20px;*/
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: 700;
+    display: none;
+}
+.banner .banner-container .arrow_left {
+    left: 10px;
+}
+.banner .banner-container .arrow_right {
+    right: 10px;
+}
+.banner .banner-container:hover .arrow {
+    display: block;
+}
+.banner .banner-container .arrow:hover {
+    color: #999999;
+}
+
+/*stages begin*/
+.stages{
+    margin: 20px auto;
+	border: 1px solid #c4c4c4;
+    border-radius: 5px;
+	height: 40px;
+	width: 86.5%;
+	line-height: 27px;
+	vertical-align: middle;
+	text-align: left;
+	overflow: hidden;
+}
+.stages_title{
+    font-family: 'cc';
+	width: 96px;
+    height: 40px;
+    line-height: 40px;
+	text-align: center;
+	border-right: 1px solid#c4c4c4;
+	float: left;
+}
+.stages-Notice{
+    width: 1010px;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+}
+.stages-Notice span{
+    font-family: 'cc';
+    color: #ec7d21;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.stages-Notice p{
+    line-height: 41px;
+}
+/*stages end*/
+.content{
+    width: 100%;
+}
+.ds{
+    width: 91.5%;
+    margin: 60px auto;
+}
+.ds h4 a{
+    text-decoration: none;
+    color: #666;
+    border: 2px solid #666;
+    width: 300px;
+    line-height: 60px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: '华文楷体';
+    margin: 0px auto;
+    display: block;
+}
+.ds h4 a:hover{
+    color: #dd6b3a;
+    border: 2px solid #dd6b3a;
+}
+.ds-content{
+    width: 100%;
+    background: url(../image/网站首页/bj.png) no-repeat;
+    height: 500px;
+    margin-top: 50px;
+}
+.ds-content p{
+    width: 60%;
+    height: 400px;
+    margin: 50px auto 0 auto;
+    padding-top: 70px;
+    line-height: 66px;
+    font-size: 26px;
+    font-family: "新宋体";
+    text-align: left;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:5;
+    -webkit-box-orient:vertical;
+}
+.swiper-slide{
+    margin: 60px 18px 0px 20px;
+    width: 30%;
+    float: left;
+}
+.ds-img{
+    position: relative;
+    width: 100%;
+    background: #b1000e;
+    height: 620px;
+    margin-top: 50px;
+}
+.ds-img .sw2bg{
+    background-color: #f7f6ef;
+    max-width: 400px;
+    text-align: center;
+    height: 500px;
+}
+.sw2bg img{
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+}
+
+
+/*悬浮start*/
+.xuanfu{
+    width: 209px;
+    height: 249px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.xuanfu-left{
+    width: 145px;
+    height: 141px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    display: none;
+}
+.xuanfu-left p{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999999;
+    margin: 0;
+}
+.xuanfu-left img{
+    margin-left: 23px;
+}
+.xuanfu-right{
+    width: 60px;
+    height: 100%;
+}
+.xuanfu-right li{
+    width: 60px;
+    line-height: 60px;
+    margin-top: 3px;
+    font-family: 'cc';
+    font-size: 24px;
+    text-align: center;
+    background-color: #D8E0E5;
+}
+.xuanfu-right li a{
+    width: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+}
+.xuanfu-right li a:hover{
+    color: #0079FE;
+}
+.xuanfu-right li:nth-child(1){
+    margin-top: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.xuanfu-right li:nth-child(2){
+    margin-top: 63px;
+}
+/*悬浮end*/
+
+
+
+
+
+
+
+

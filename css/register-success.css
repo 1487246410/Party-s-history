@@ -1,0 +1,98 @@
+/*版心*/
+body {
+    background-color: #f5f5f5;
+}
+@font-face {
+    font-family: 'cc';
+    src: url('../fonts/icomoon.eot?mpsn4e');
+    src: url('../fonts/icomoon.eot?mpsn4e#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?mpsn4e') format('truetype'),
+    url('../fonts/icomoon.woff?mpsn4e') format('woff'),
+    url('../fonts/icomoon.svg?mpsn4e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*register   start*/
+
+.register-success {
+    width: 460px;
+    height: 460px;
+    border-radius: 10px;
+    position: absolute;
+    top: 120px;
+    left: 420px;
+    background: #FFFFFF;
+}
+
+.success-span {
+    width: 460px;
+    height: 200px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.success-span span {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-family: "cc";
+    font-size: 66px;
+    line-height: 100px;
+    color: #FFFFFF;
+    background-color: #4BD863;
+    border-radius: 50%;
+}
+
+.success-span p {
+    width: 460px;
+    line-height: 20px;
+    font-size: 24px;
+    color: #666666;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.success-span p:last-child{
+    font-size: 14px;
+    color: #999999;
+    font-weight: normal;
+}
+.register-success a{
+    text-decoration: none;
+    border: 1px solid #0079FE;
+    color: #0079FE;
+    font-size: 14px;
+    width: 150px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.register-success a:hover{
+    opacity: .8;
+}
+/*register   end*/
+
+/*footer   start*/
+
+.footer {
+    width: 1300px;
+    height: 100px;
+    margin-top: 651px;
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 12px;
+}
+
+.footer p {
+    line-height: 24px;
+    padding-top: 26px;
+}
+
+.footer p a {
+    color: #CCCCCC;
+}
+
+/*footer   end*/

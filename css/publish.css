@@ -1,0 +1,74 @@
+body{
+    color: #666666;
+    font-family: 微软雅黑;
+}
+.p1-0{
+    font-size: 25px;
+    font-family:'Arial';
+    font-weight: bolder;
+    color: #666666;
+    margin: 35px 0px 10px 90px;
+}
+.p1-9{
+    font-size: 25px;
+    font-family:'Arial';
+    font-weight: bolder;
+    color: #666666;
+    margin: 35px 0px 10px 90px;
+}
+.p1_hr-0{
+    border: 0.5px #999999 solid;
+    width: 1116px;
+    text-align: right;
+}
+.p1_text{
+    font-size: 15px;
+    margin: 35px 0px 10px 90px;
+}
+.p1_input{
+    width: 450px;
+    height: 40px;
+    margin: 20px 0px 10px 90px;
+}
+.p1_input input{
+    width: 450px;
+    height: 40px;
+}
+.p2_text{
+    font-size: 15px;
+    margin: 35px 0px 10px 90px;
+}
+.p2_input{
+    margin: 20px 0px 10px 90px;
+    width: 1115px;
+    height: 210px;
+}
+.p2_input textarea{
+    width: 1115px;
+    height: 210px;
+}
+.p3_text{
+    font-size: 15px;
+    margin: 35px 0px 10px 90px;
+}
+.p3_input{
+    margin: 20px 0px 10px 90px;
+}
+.p4_text{
+    font-size: 15px;
+    margin: 35px 0px 10px 90px;
+}
+.p4_input{
+    margin: 20px 0px 10px 90px;
+    width: 450px;
+    height: 40px;
+}
+.p4_input input{
+    width: 450px;
+    height: 40px;
+}
+#shen{
+    width: 100px;
+    height: 30px;
+    margin: 20px 0px 10px 90px;
+}

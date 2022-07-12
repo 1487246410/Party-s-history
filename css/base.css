@@ -1,0 +1,393 @@
+/*版心*/
+body{
+    background-color: #f5f5f5;
+}
+.w{
+    
+    margin: auto;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.color-red{
+    color: #f10215!important;
+}
+@font-face {
+    font-family: 'cc';
+    src:  url('../fonts/icomoon.eot?mpsn4e');
+    src:  url('../fonts/icomoon.eot?mpsn4e#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?mpsn4e') format('truetype'),
+    url('../fonts/icomoon.woff?mpsn4e') format('woff'),
+    url('../fonts/icomoon.svg?mpsn4e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+
+
+.top-height{
+    height: 80px;
+}
+/*top start*/
+.top{
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+.login{
+    width: 50px;
+    top: 15px;
+    left: 0;
+    position: absolute;
+    background: url("../image/login.jpg") no-repeat;
+    margin-left: 50px;
+}
+.login a{
+    display: block;
+    height: 50px;
+    text-indent: -2000em;
+}
+.navbar{
+    margin-left: 140px;
+    height: 80px;
+    border: none;
+    position: relative;
+}
+.active span{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    display: block;
+    height: 5px;
+    background-color: #f10215;
+    z-index: 2;
+}
+.activeC span{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    display: block;
+    height: 5px;
+    background-color: #f10215;
+    z-index: 2;
+}
+.navbar ul li a{
+    width: 105px;
+    line-height: 80px;
+    display: block;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 0;
+    z-index: 1;
+}
+.navbar ul li a:hover{
+    color: #666666;
+}
+.search{
+    font-family: "cc";
+    font-size: 20px;
+    color: #CCCCCC;
+    font-style: normal;
+    position: absolute;
+    width: 265px;
+    height: 80px;
+    top: 0;
+    right: 260px;
+}
+.search :hover{
+    color: #f10215;
+    cursor: pointer;
+}
+.search-head i{
+    width: 100%;
+    height: 5px;
+    background: #f10215;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.search .form-group{
+    width: 388px;
+    height: 30px;
+    margin-top: 25px;
+    display: block;
+}
+.search .form-group input{
+    width: 0;
+    display: block;
+    outline: none;
+    border: none;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+.search .form-group input:hover{
+    cursor: text;
+}
+.search .search-head{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 80px;
+    height: 80px;
+    width: 45px;
+    float: right;
+    text-align: center;
+}
+
+.box-remove{
+    line-height: 80px;
+    height: 80px;
+    width: 45px;
+    position: absolute;
+    top: 0;
+    right: 200px;
+    text-align: center;
+}
+.box-remove-chide{
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 80px;
+    right: 175px;
+    display: none;
+    z-index: 999;
+}
+.box-remove-chide a{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+    color: #999999;
+}
+.box-remove-chide a:hover{
+    background-color: #f10215;
+    color: #FFFFFF;
+}
+.box-remove:hover span{
+    color: #f10215;
+}
+.box-remove i{
+    width: 100%;
+    height: 5px;
+    background: #f10215;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.box-remove span{
+    font-family: "cc";
+    font-size: 20px;
+    color: #CCCCCC;
+    font-style: normal;
+}
+.user{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    right: 100px;
+}
+.user a{
+    /*line-height: 80px;*/
+    color: #CCCCCC;
+    cursor: pointer;
+}
+.user a:hover{
+    color: #f10215;
+    text-decoration: none;
+}
+.user i{
+    width: 100%;
+    height: 5px;
+    background: #f10215;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.user em{
+    width: 20px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;
+    font-family: "cc";
+    font-size: 18px;
+    font-style: normal;
+}
+.user span{
+    height: 80px;
+    display: inline-block;
+    line-height: 70px;
+    font-family: 微软雅黑;
+    font-weight: 410;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.regist{
+    /*line-height: 80px;*/
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 20px;
+}
+.regist a{
+    color: #CCCCCC;
+    cursor: pointer;
+}
+.regist a:hover{
+    color: #f10215;
+    text-decoration: none;
+}
+.regist i{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: #f10215;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.regist em{
+    width: 20px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;
+    font-family: "cc";
+    font-size: 18px;
+    font-style: normal;
+}
+.regist span{
+    height: 80px;
+    display: inline-block;
+    line-height: 70px;
+    font-family: 微软雅黑;
+    font-weight: 410;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+/*top end*/
+
+
+/*footer start*/
+.footer{
+    height: 150px;
+    background-color: #ffffff;
+    margin-top: 50px;/*这里我根据首页调整的距离，其他页面底部距离奴一样在这里调*/
+}
+.footer-content .footer-header{
+    width: 80px;
+    height: 80px;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.footer-content .footer-msg{
+    width: 745px;
+    height: 90px;
+    margin: 30px 0 0 25px;
+    /*line-height: 90px;*/
+}
+.footer-content .footer-msg ul{
+    line-height: 50px;
+}
+.footer-content .footer-msg li{
+    float: left;
+    margin-right: 45px;
+}
+.footer-content .footer-msg li a{
+    color: #999999;
+    text-decoration: none;
+}
+.footer-content .footer-msg li a:hover{
+    color: #666666;
+}
+.footer-content .footer-msg p{
+     color: #CCCCCC;
+}
+.footer-content .footer-msg li:nth-last-child(1){
+    float: none;
+}
+.phone{
+    margin-right: 50px;
+    margin-top: 52.2px;
+    width: 147px;
+    height: 45px;
+    line-height: 25px;
+    color: #999999;
+}
+.phone span{
+    font-family: "cc";
+}
+.other{
+    margin-right: 50px;
+    width: 202px;
+    height: 172px;
+    margin-top: -51px;
+    position: relative;
+}
+.other li{
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    margin: 110px 0 0 11px;
+    background-color: #E4E4E4;
+    font-family: "cc";
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.other li:nth-child(1){
+    margin-left: 30px;
+}
+.other li:hover{
+    background-color: #f10215;
+    color: #FFFFFF;
+}
+.erweima{
+    position: absolute;
+    width: 100px;
+    height: 117px;
+    top: -10px;
+    left: 3px;
+    border: 1px solid #CCCCCC;
+    padding: 9px 8px;
+    display: none;
+}
+.erweima span{
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+    color: #999999;
+    display: block;
+}
+/*footer end*/
